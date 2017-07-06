@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mytrendin.keychainmanagement.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:paddingTop="25dp"
+            android:id="@+id/title"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/instruction_1" />
+        <Button
+            android:padding="16dp"
+            android:layout_marginTop="25dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/btn_certificate_install"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center"
+            android:text="@string/btn_cerrtificate_install_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:padding="16dp"
+            android:layout_marginTop="25dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/btn_certificate_install_verify"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center"
+            android:text="@string/btn_cerrtificate_install_verify_text"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/content"
+            android:visibility="invisible"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edittext_text_data"
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:hint="@string/edt_hint_text"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/btn_action_encrypt"
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:text="@string/btn_encrypt_text_data"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/data_display"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

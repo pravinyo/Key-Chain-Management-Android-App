@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KeyChainManagement</string>
+    <string name="instruction_1">Click button to install certificate</string>
+    <string name="btn_cerrtificate_install_text">Install Certificate</string>
+    <string name="btn_cerrtificate_install_verify_text">Verify signed Data</string>
+    <string name="instruction_2">Signature is Verified</string>
+    <string name="instruction_3">Not Signed Properly</string>
+    <string name="instruction_4">Click verify signed data button to check whether signature is valid or not</string>
+    <string name="edt_hint_text">enter text data</string>
+    <string name="btn_encrypt_text_data">Encrypt</string>
+    <string name="btn_action_decrypt">Decrypt</string>
+</resources>
